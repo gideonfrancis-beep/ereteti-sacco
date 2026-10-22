@@ -1,59 +1,123 @@
-* {
-  box-sizing: border-box;
+/*a css comment*/
+*{
+    box-sizing: border-box;
 }
 
-body {
-  background: #F7F3E8;
-  color: #262626;
-  font-family: "Source Sans 3", system-ui, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 18rem;
-  grid-template-areas:
-    "header header"
-    "nav    nav"
-    "main   aside"
-    "footer footer";
+body{
+    margin: 0;
+    background-color: #f7f3e8;
+    color:#262626;
+    line-height: 1.5;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
-h1, h2 {
-  font-family: "Source Serif 4", Georgia, serif;
+h1,h2{
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;/*making thing bold or the opposite*/
 }
 
-h1 {
-  font-size: 2rem;
+header{
+    background:#1f6f3e;
+    color: #f7f3e8;
+}
+nav{
+    background: #262626;
+}
+nav a{
+    color: #f7f3e8;
+}
+a{
+    color: #1f6f3e;
+}
+header,main,footer{
+    padding: 1rem;
 }
 
-h2 {
-  color: #1F6F3E;
+img{
+    max-width: 100%;
+    height: auto;
 }
 
-header { grid-area: header; }
-nav    { grid-area: nav; }
-main   { grid-area: main; }
-aside  { grid-area: aside; }
-footer { grid-area: footer; }
-
-header {
-  background: #1F6F3E;
-  color: #F7F3E8;
-}
-
+/*flex for the nav items*/
 nav {
   position: sticky;
   top: 0;
 }
-
-nav a {
-  color: #F7F3E8;
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.75rem 1rem;
 }
-
-nav ul {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0.75rem 1rem;
+.logo{
+    width: 3.5rem;
+    height: auto;
 }
+h1{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin:0;
+}
+.route-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+   list-style-type: none;
+   padding: 0;
+}
+  .route-cards li{
+    flex: 1 1 12rem;
+    padding: 1rem;
+    background: #ffffff;
+    border-top: 4px solid #d8a22b;
+}
+/*Grid Layout*/
+body{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 18 rem;
+    grid-template-areas: "header header"
+                          "nav nav"
+                        "main aside"
+                        "footer footer";
+}
+header{
+    grid-area: header;}
+    nav{
+        grid-area: nav;
+    }
+    main{
+        grid-area: main;
+    }
+    aside{
+        grid-area: aside;
+    }
+    footer{grid-area: footer;
+    }
+      footer{
+        border-top: 3px solid #d8a22b;
+      }
+      
 
+/*responsive design*/
+@media (max-width: 768px){
+    body{
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "header"
+                            "nav"
+                            "main"
+                            "aside"
+                            "footer";
+    }
+    nav{
+      position: static;
+    };
+    nav ul {
+      flex-direction: column;
+    }
+    .logo{
+        width: 2.5rem;
+    }
+}
