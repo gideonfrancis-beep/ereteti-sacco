@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our routes - Ereteti Dairy Sacco</title>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
      <header>
@@ -18,6 +19,10 @@
             <a href="/deliveries.html">Deliveries</a>
         </nav>
     </header>
+    <main>
+        <label for="route-search">Find a route or a centre</label>
+        <input type="search" id="route-search" placeholder="e.g. Kibiko">
+        <p id="route-count" aria-live="polite"></p>
     <section id="kiserian">
         <h2>Kiserian Route</h2>
         <p>The lorry runs from 6.30am and again from 4.00pm.</p>
@@ -45,6 +50,7 @@
             <li>Kware centre</li>
         </ul>
     </section>
+    </main>
     <footer>
     <p>Ereteti Dairy Sacco, PO Box 4021, Ngong.</p>
     <p>Site built by Samuel Musyoka, DBT Year 1, 2026.</p>

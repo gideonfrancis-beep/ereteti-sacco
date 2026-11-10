@@ -121,3 +121,12 @@ header{
         width: 2.5rem;
     }
 }
+
+/* Lab 3 — validation feedback */
+.message {
+  color: #b00000;
+}
+
+.invalid {
+  border: 2px solid #b00000;
+}
