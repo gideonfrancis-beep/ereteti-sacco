@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apply for memebrship - Ereteti Dairy Sacco</title>
-    <script src="js/main.js" defer></script>
-</head>
-<body>
-     <header>
-        <h1> Apply For Membership </h1>
-        <p>Milk collected twice a day, on three routes out of Ngong.</p>
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/routes.html">Our routes</a>
-            <a href="/contact.html">Contact</a>
-            <a href="/register.html">Join</a>
-             <a href="/deliveries.html">Deliveries</a>
-        </nav>
-    </header>
+<?php $page_title = 'Apply for membership'; include 'includes/header.php'; ?>
+</header>
     <main>
         <p>
             Any dairy farmer within reach of one of our three routes
@@ -27,7 +8,7 @@
               membership number is issued you may deliver from that day,
               and you are paid once a month for the litres we accept 
         </p>
-        <form action="#" method="post">
+        <form action="process-register.php" method="post">
             <fieldset>
                 <legend>Your details</legend>
             
@@ -53,9 +34,9 @@
             <label for="routes">Route</label>
             <select name="route" id="routes">
                 <option value="">Choose a route</option>
-                <option value="Kiserian">Kiserian</option>
-                <option value="Kiserian">Ngong</option>
-                <option value="Kiserian">Rongai</option>
+                <option value="1">Kiserian</option>
+                <option value="2">Ngong</option>
+                <option value="3">Rongai</option>
             </select>
             <label for="date">Date Of Joining</label>
             <input type="date" id="date" max="2026-09-24" name="date_joined">
@@ -68,10 +49,4 @@
 
         </form>
     </main>
-
-<footer>
-    <p>Ereteti Dairy Sacco, PO Box 4021, Ngong.</p>
-    <p>Site built by Samuel Musyoka, DBT Year 1, 2026.</p>
-</footer>
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>

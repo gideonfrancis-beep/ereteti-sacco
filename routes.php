@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our routes - Ereteti Dairy Sacco</title>
-    <script src="js/main.js" defer></script>
-</head>
-<body>
-     <header>
-        <h1> Ereteti Dairy Sacco</h1>
-        <p>Milk collected twice a day, on three routes out of Ngong.</p>
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/routes.html">Our routes</a>
-            <a href="/contact.html">Contact</a>
-            <a href="/register.html">Join</a>
-            <a href="/deliveries.html">Deliveries</a>
-        </nav>
-    </header>
+<?php $page_title = 'Our routes'; include 'includes/header.php'; ?>
+</header>
     <main>
         <label for="route-search">Find a route or a centre</label>
         <input type="search" id="route-search" placeholder="e.g. Kibiko">
@@ -51,10 +32,4 @@
         </ul>
     </section>
     </main>
-    <footer>
-    <p>Ereteti Dairy Sacco, PO Box 4021, Ngong.</p>
-    <p>Site built by Samuel Musyoka, DBT Year 1, 2026.</p>
-</footer>
-</body>
-
-</html>
+<?php include 'includes/footer.php'; ?>

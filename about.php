@@ -1,25 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us - Ereteti Dairy Sacco</title>
-    <link rel="stylesheet" href="css/style.css">:
-    <script src="js/main.js" defer></script>
-</head>
-<body>
- <header>
-        <h1> About Ereteti</h1>
-        <p>Milk collected twice a day, on three routes out of Ngong.</p>
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/routes.html">Our routes</a>
-            <a href="/contact.html">Contact</a>
-            <a href="/register.html">Join</a>
-            <a href="/deliveries.html">Deliveries</a>
-        </nav>
-    </header>
+<?php $page_title = 'About the sacco'; include 'includes/header.php'; ?>
+</header>
     <main>
         <h2> Nine farmers and one cooler</h2>
         <p> The sacco was registered in 1998 by nine farmers who were
@@ -45,10 +25,4 @@
 
     <img src="/images/collection-lorry.jpg" width = "400" height = "300" alt="Churns loaded onto the lorry on the Ngong road at sunrise">
     </main>
-    <footer>
-    <p>Ereteti Dairy Sacco, PO Box 4021, Ngong.</p>
-    <p>Site built by Francis Gideon, DBT Year 1, 2026.</p>
-    </footer>
-</body>
-
-</html>
+<?php include 'includes/footer.php'; ?>
